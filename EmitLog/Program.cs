@@ -8,7 +8,7 @@ namespace EmitLog
     {
         static void Main(string[] args)
         {
-            var connectionFactory = new ConnectionFactory() { HostName = "localhost" };
+            var connectionFactory = new ConnectionFactory() { HostName = "192.168.101.130" };
             using (var connection = connectionFactory.CreateConnection())
             {
                 using (var channel = connection.CreateModel())
